@@ -378,4 +378,9 @@
 **/
 - (void)xmppCapabilities:(XMPPCapabilities *)sender didDiscoverCapabilities:(NSXMLElement *)caps forJID:(XMPPJID *)jid;
 
+/**
+ * Invoked when capabilities fetch has timed out.
+ **/
+- (void)xmppCapabilities:(XMPPCapabilities *)sender fetchFailedForJID:(XMPPJID *)jid;
+
 @end

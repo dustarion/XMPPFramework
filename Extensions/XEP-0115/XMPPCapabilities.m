@@ -1737,6 +1737,7 @@ static NSInteger sortFieldValues(NSXMLElement *value1, NSXMLElement *value2, voi
 	
 	[discoRequestJidSet removeObject:jid];
 	[xmppCapabilitiesStorage setCapabilitiesFetchFailedForJID:jid xmppStream:xmppStream];
+    [multicastDelegate xmppCapabilities:self fetchFailedForJID:jid];
 }
 
 @end
