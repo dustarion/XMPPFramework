@@ -10,7 +10,7 @@ import Foundation
 
 /// XEP-0085: Chat States
 /// https://xmpp.org/extensions/xep-0085.html
-public extension XMPPMessage {
+extension XMPPMessage {
     public enum ChatState: String {
         case active
         case composing

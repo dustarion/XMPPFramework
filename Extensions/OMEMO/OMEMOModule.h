@@ -117,7 +117,7 @@ typedef NS_ENUM(NSUInteger, OMEMOModuleNamespace) {
   The client may wish to transmit keying material to the contact. This first has to be generated. The client MUST generate a fresh, randomly generated key/IV pair. For each intended recipient device, i.e. both own devices as well as devices associated with the contact, this key is encrypted using the corresponding long-standing axolotl session. Each encrypted payload key is tagged with the recipient device's ID. This is all serialized into a KeyTransportElement, omitting the <payload> as follows:
  *
  * @param payload data encrypted with fresh AES-128 GCM key/iv pair. If nil this is equivalent to a KeyTransportElement.
- * @param jid recipient JID
+ * @param toJID recipient JID
  * @param keyData payload's AES key encrypted to each recipient deviceId's Axolotl session
  * @param iv the IV used for encryption of payload
  * @param elementId XMPP element id. If nil a random UUID will be used.

@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - Multicast Delegate
-public extension XMPPModule {
+extension XMPPModule {
     
     /**
      * Multicast helper which, when used with the invoke function in the class extension,
@@ -53,7 +53,7 @@ public extension XMPPModule {
 }
 
 // MARK: - Synchronization
-public extension XMPPModule {
+extension XMPPModule {
     
     /**
      * Dispatches block synchronously or asynchronously on moduleQueue, or

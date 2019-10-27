@@ -11,7 +11,7 @@ import Foundation
 /// XEP-0319: Last User Interaction in Presence
 /// This specification defines a way to communicate time of last user interaction with her system using XMPP presence notifications.
 /// https://xmpp.org/extensions/xep-0319.html
-public extension XMPPPresence {
+extension XMPPPresence {
     /// 'urn:xmpp:idle:1'
     @objc public static let idleXmlns = "urn:xmpp:idle:1"
     

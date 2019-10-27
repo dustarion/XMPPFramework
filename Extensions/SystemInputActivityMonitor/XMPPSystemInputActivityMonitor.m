@@ -107,23 +107,23 @@ const NSTimeInterval XMPPSystemInputActivityMonitorInactivityTimeIntervalNone = 
 - (void)_setLastActivityDate:(NSDate *)flag{
 
 	dispatch_block_t block = ^{
-		lastActivityDate = flag;
+        self->lastActivityDate = flag;
 				
-		if(inactivityTimeInterval > XMPPSystemInputActivityMonitorInactivityTimeIntervalNone)
+        if(self->inactivityTimeInterval > XMPPSystemInputActivityMonitorInactivityTimeIntervalNone)
 		{
-			if(active && -[lastActivityDate timeIntervalSinceNow] > inactivityTimeInterval)
+            if(self->active && -[self->lastActivityDate timeIntervalSinceNow] > self->inactivityTimeInterval)
 			{
-				active = NO;
-				[multicastDelegate xmppSystemInputActivityMonitorDidBecomeInactive:self];				
+                self->active = NO;
+                [self->multicastDelegate xmppSystemInputActivityMonitorDidBecomeInactive:self];
 			}
-			else if(!active && -[lastActivityDate timeIntervalSinceNow] < inactivityTimeInterval)
+            else if(!self->active && -[self->lastActivityDate timeIntervalSinceNow] < self->inactivityTimeInterval)
 			{
-				active = YES;
-				[multicastDelegate xmppSystemInputActivityMonitorDidBecomeActive:self];
+                self->active = YES;
+                [self->multicastDelegate xmppSystemInputActivityMonitorDidBecomeActive:self];
 			}
 			
 		}else{
-			active = YES;
+            self->active = YES;
 		}
 
 	};
@@ -144,7 +144,7 @@ const NSTimeInterval XMPPSystemInputActivityMonitorInactivityTimeIntervalNone = 
 	__block BOOL result = YES;;
 	
 	dispatch_block_t block = ^{
-		result = active;
+        result = self->active;
 	};
 	
 	if (dispatch_get_specific(moduleQueueTag))
@@ -160,7 +160,7 @@ const NSTimeInterval XMPPSystemInputActivityMonitorInactivityTimeIntervalNone = 
 	__block NSDate *result = nil;;
 
 	dispatch_block_t block = ^{
-		result = lastActivityDate;
+        result = self->lastActivityDate;
 	};
 
 	if (dispatch_get_specific(moduleQueueTag))
@@ -176,7 +176,7 @@ const NSTimeInterval XMPPSystemInputActivityMonitorInactivityTimeIntervalNone = 
 	__block NSTimeInterval result = XMPPSystemInputActivityMonitorInactivityTimeIntervalNone;
 
 	dispatch_block_t block = ^{
-		result = inactivityTimeInterval;
+        result = self->inactivityTimeInterval;
 	};
 
 	if (dispatch_get_specific(moduleQueueTag))
@@ -190,7 +190,7 @@ const NSTimeInterval XMPPSystemInputActivityMonitorInactivityTimeIntervalNone = 
 - (void)setInactivityTimeInterval:(NSTimeInterval)flag
 {
 	dispatch_block_t block = ^{
-	       inactivityTimeInterval = flag;
+        self->inactivityTimeInterval = flag;
 	};
 
 	if (dispatch_get_specific(moduleQueueTag))

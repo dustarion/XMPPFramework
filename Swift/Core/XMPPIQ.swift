@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension XMPPIQ {
+extension XMPPIQ {
     public enum IQType: String {
         case get
         case set

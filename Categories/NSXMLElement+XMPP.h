@@ -1,6 +1,5 @@
 #import <Foundation/Foundation.h>
-
-@import KissXML;
+#import <KissXML/KissXML.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @interface NSXMLElement (XMPP)

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Date {
+extension Date {
     
     public static func from(xmppDateString: String) -> Date? {
         if let date = XMPPDateTimeProfiles.parseDate(xmppDateString) {

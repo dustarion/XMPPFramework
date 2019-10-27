@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension XMPPMessage {
+extension XMPPMessage {
     public enum MessageType: String {
         case chat
         case error

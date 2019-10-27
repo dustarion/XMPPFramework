@@ -12,7 +12,7 @@ import KissXML
 /**
  * For whatever reason Swift does not reliably import all of the methods from NSXMLElement+XMPP.h, possibly due to the typealias bug between DDXMLElement and XMLElement on iOS. To prevent this issue, we can simply reimplement the missing ones here.
  */
-public extension XMLElement {
+extension XMLElement {
     
     // MARK: Extracting a single element.
     

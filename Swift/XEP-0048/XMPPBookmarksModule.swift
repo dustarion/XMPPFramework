@@ -8,10 +8,10 @@
 
 import Foundation
 
-#if COCOAPODS
-    import CocoaLumberjack
+#if canImport(CocoaLumberjackSwift)
+import CocoaLumberjackSwift
 #else
-    import CocoaLumberjackSwift
+import CocoaLumberjack
 #endif
     
 @objc public enum XMPPBookmarksMode: Int {

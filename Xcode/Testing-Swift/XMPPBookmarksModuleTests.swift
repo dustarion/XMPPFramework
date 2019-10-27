@@ -7,10 +7,10 @@
 
 import XCTest
 
-#if COCOAPODS
-    import XMPPFramework
-#else
+#if canImport(XMPPFrameworkSwift)
     import XMPPFrameworkSwift
+#else
+    import XMPPFramework
 #endif
 
 extension XMPPElement {

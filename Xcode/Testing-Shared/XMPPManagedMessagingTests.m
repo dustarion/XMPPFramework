@@ -201,7 +201,7 @@
 - (void)fakeReceivingAckForStanzaIDs:(NSArray *)stanzaIDs
 {
     dispatch_async(self.moduleQueue, ^{
-        [multicastDelegate xmppStreamManagement:self didReceiveAckForStanzaIds:stanzaIDs];
+        [self->multicastDelegate xmppStreamManagement:self didReceiveAckForStanzaIds:stanzaIDs];
     });
 }
 

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension XMPPPresence {
+extension XMPPPresence {
     /// The 'type' attribute of a presence stanza is OPTIONAL. A presence stanza that does not possess a 'type' attribute is used to signal to the server that the sender is online and available for communication. If included, the 'type' attribute specifies a lack of availability, a request to manage a subscription to another entity's presence, a request for another entity's current presence, or an error related to a previously-sent presence stanza. If included, the 'type' attribute MUST have one of the following values
     public enum PresenceType: String {
         /// Signals that the entity is no longer available for communication.
