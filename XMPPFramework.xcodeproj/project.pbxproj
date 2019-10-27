@@ -1087,6 +1087,20 @@
 			remoteGlobalIDString = 19FF460E1B8B4D1400B43179;
 			remoteInfo = CocoaLumberjackSwift;
 		};
+		D940371D23663629001AF5C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D44BAE11E537066000930E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9DCD3F71E6256D90010D1C7;
+			remoteInfo = "XMPPFramework (macOS)";
+		};
+		D940372223663630001AF5C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D44BAE11E537066000930E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9DCD55A1E6258CF0010D1C7;
+			remoteInfo = "XMPPFramework (tvOS)";
+		};
 		D9A7A91B1FB97892005183CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D9DCD3391E6250C50010D1C7 /* CocoaAsyncSocket.xcodeproj */;
@@ -3495,6 +3509,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D940371E23663629001AF5C0 /* PBXTargetDependency */,
 				D940371323662CE8001AF5C0 /* PBXTargetDependency */,
 				D9A7AD0D1FB97A3C005183CD /* PBXTargetDependency */,
 				D9A7AD0F1FB97A3C005183CD /* PBXTargetDependency */,
@@ -3518,6 +3533,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D940372323663630001AF5C0 /* PBXTargetDependency */,
 				D940370F23662CC2001AF5C0 /* PBXTargetDependency */,
 				D940371123662CC2001AF5C0 /* PBXTargetDependency */,
 				D9A7AE591FB97A65005183CD /* PBXTargetDependency */,
@@ -4361,6 +4377,16 @@
 			isa = PBXTargetDependency;
 			name = CocoaLumberjackSwift;
 			targetProxy = D940371223662CE8001AF5C0 /* PBXContainerItemProxy */;
+		};
+		D940371E23663629001AF5C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9DCD3F71E6256D90010D1C7 /* XMPPFramework (macOS) */;
+			targetProxy = D940371D23663629001AF5C0 /* PBXContainerItemProxy */;
+		};
+		D940372323663630001AF5C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9DCD55A1E6258CF0010D1C7 /* XMPPFramework (tvOS) */;
+			targetProxy = D940372223663630001AF5C0 /* PBXContainerItemProxy */;
 		};
 		D9A7A91A1FB97892005183CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
