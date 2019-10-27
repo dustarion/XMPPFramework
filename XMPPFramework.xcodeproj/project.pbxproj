@@ -77,6 +77,12 @@
 		D9268BAF1F9EB0BB009A37C7 /* XMPPMessage+XEP_0313.m in Sources */ = {isa = PBXBuildFile; fileRef = D9268BAB1F9EB0BB009A37C7 /* XMPPMessage+XEP_0313.m */; };
 		D9268BB01F9EB0BB009A37C7 /* XMPPMessage+XEP_0313.m in Sources */ = {isa = PBXBuildFile; fileRef = D9268BAB1F9EB0BB009A37C7 /* XMPPMessage+XEP_0313.m */; };
 		D9268BB11F9EB0BB009A37C7 /* XMPPMessage+XEP_0313.m in Sources */ = {isa = PBXBuildFile; fileRef = D9268BAB1F9EB0BB009A37C7 /* XMPPMessage+XEP_0313.m */; };
+		D940370423662C4B001AF5C0 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD35D1E6250CA0010D1C7 /* CocoaLumberjack.framework */; };
+		D940370723662C65001AF5C0 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD35D1E6250CA0010D1C7 /* CocoaLumberjack.framework */; };
+		D940370A23662C9A001AF5C0 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD35F1E6250CA0010D1C7 /* CocoaLumberjackSwift.framework */; };
+		D940370B23662CAD001AF5C0 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD35D1E6250CA0010D1C7 /* CocoaLumberjack.framework */; };
+		D940370C23662CB7001AF5C0 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD35D1E6250CA0010D1C7 /* CocoaLumberjack.framework */; };
+		D940370D23662CB7001AF5C0 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD35F1E6250CA0010D1C7 /* CocoaLumberjackSwift.framework */; };
 		D95367DB1FB90DA00075502D /* XMPPBookmark.h in Headers */ = {isa = PBXBuildFile; fileRef = D95367D91FB90DA00075502D /* XMPPBookmark.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D95367DC1FB90DA00075502D /* XMPPBookmark.h in Headers */ = {isa = PBXBuildFile; fileRef = D95367D91FB90DA00075502D /* XMPPBookmark.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D95367DD1FB90DA00075502D /* XMPPBookmark.h in Headers */ = {isa = PBXBuildFile; fileRef = D95367D91FB90DA00075502D /* XMPPBookmark.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1053,6 +1059,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D940370823662C6F001AF5C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 19FF46011B8B4CF400B43179;
+			remoteInfo = CocoaLumberjack;
+		};
+		D940370E23662CC2001AF5C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 19FF46011B8B4CF400B43179;
+			remoteInfo = CocoaLumberjack;
+		};
+		D940371023662CC2001AF5C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 19FF460E1B8B4D1400B43179;
+			remoteInfo = CocoaLumberjackSwift;
+		};
+		D940371223662CE8001AF5C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 19FF460E1B8B4D1400B43179;
+			remoteInfo = CocoaLumberjackSwift;
+		};
 		D9A7A91B1FB97892005183CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D9DCD3391E6250C50010D1C7 /* CocoaAsyncSocket.xcodeproj */;
@@ -1709,6 +1743,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D940370B23662CAD001AF5C0 /* CocoaLumberjack.framework in Frameworks */,
+				D940370A23662C9A001AF5C0 /* CocoaLumberjackSwift.framework in Frameworks */,
 				D9A7AFB71FB97B2C005183CD /* XMPPFramework.framework in Frameworks */,
 				D9A7ADAC1FB97A3C005183CD /* AppKit.framework in Frameworks */,
 				D9A7ADAD1FB97A3C005183CD /* CocoaAsyncSocket.framework in Frameworks */,
@@ -1723,6 +1759,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D940370C23662CB7001AF5C0 /* CocoaLumberjack.framework in Frameworks */,
+				D940370D23662CB7001AF5C0 /* CocoaLumberjackSwift.framework in Frameworks */,
 				D9A7AFB81FB97B34005183CD /* XMPPFramework.framework in Frameworks */,
 				D9A7AEF81FB97A65005183CD /* CocoaAsyncSocket.framework in Frameworks */,
 				D9A7AEFA1FB97A65005183CD /* KissXML.framework in Frameworks */,
@@ -1736,6 +1774,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D940370423662C4B001AF5C0 /* CocoaLumberjack.framework in Frameworks */,
 				D9DCD6C01E625B4D0010D1C7 /* AppKit.framework in Frameworks */,
 				D9DCD5541E6257CE0010D1C7 /* CocoaAsyncSocket.framework in Frameworks */,
 				D9DCD5561E6257CE0010D1C7 /* KissXML.framework in Frameworks */,
@@ -1749,6 +1788,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D940370723662C65001AF5C0 /* CocoaLumberjack.framework in Frameworks */,
 				D9DCD6A01E6259970010D1C7 /* CocoaAsyncSocket.framework in Frameworks */,
 				D9DCD6A21E6259970010D1C7 /* KissXML.framework in Frameworks */,
 				D9DCD6A31E6259970010D1C7 /* libidn.framework in Frameworks */,
@@ -3455,6 +3495,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D940371323662CE8001AF5C0 /* PBXTargetDependency */,
 				D9A7AD0D1FB97A3C005183CD /* PBXTargetDependency */,
 				D9A7AD0F1FB97A3C005183CD /* PBXTargetDependency */,
 				D9A7AD111FB97A3C005183CD /* PBXTargetDependency */,
@@ -3477,6 +3518,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				D940370F23662CC2001AF5C0 /* PBXTargetDependency */,
+				D940371123662CC2001AF5C0 /* PBXTargetDependency */,
 				D9A7AE591FB97A65005183CD /* PBXTargetDependency */,
 				D9A7AE5B1FB97A65005183CD /* PBXTargetDependency */,
 				D9A7AE5F1FB97A65005183CD /* PBXTargetDependency */,
@@ -3520,6 +3563,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D940370923662C6F001AF5C0 /* PBXTargetDependency */,
 				D9DCD6991E6259770010D1C7 /* PBXTargetDependency */,
 				D9DCD69B1E6259770010D1C7 /* PBXTargetDependency */,
 				D9DCD69F1E6259770010D1C7 /* PBXTargetDependency */,
@@ -4298,6 +4342,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D940370923662C6F001AF5C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			targetProxy = D940370823662C6F001AF5C0 /* PBXContainerItemProxy */;
+		};
+		D940370F23662CC2001AF5C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			targetProxy = D940370E23662CC2001AF5C0 /* PBXContainerItemProxy */;
+		};
+		D940371123662CC2001AF5C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjackSwift;
+			targetProxy = D940371023662CC2001AF5C0 /* PBXContainerItemProxy */;
+		};
+		D940371323662CE8001AF5C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjackSwift;
+			targetProxy = D940371223662CE8001AF5C0 /* PBXContainerItemProxy */;
+		};
 		D9A7A91A1FB97892005183CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "iOS CocoaAsyncSocket";
