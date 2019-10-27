@@ -21,7 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
  * The category methods below are more readable, and they actually work.
 **/
 
-+ (NSXMLElement *)elementWithName:(NSString *)name xmlns:(NSString *)ns;
 - (instancetype)initWithName:(NSString *)name xmlns:(NSString *)ns;
 
 /**
@@ -31,12 +30,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSArray<NSXMLElement*> *)elementsForXmlns:(NSString *)ns;
 - (NSArray<NSXMLElement*> *)elementsForXmlnsPrefix:(NSString *)nsPrefix;
 
-/**
- * Extracting a single element.
-**/
-
-- (nullable NSXMLElement *)elementForName:(NSString *)name NS_REFINED_FOR_SWIFT;
-- (nullable NSXMLElement *)elementForName:(NSString *)name xmlns:(NSString *)xmlns NS_REFINED_FOR_SWIFT;
 - (nullable NSXMLElement *)elementForName:(NSString *)name xmlnsPrefix:(NSString *)xmlnsPrefix NS_SWIFT_NAME(element(forName:xmlnsPrefix:));
 
 /**
@@ -51,23 +44,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)removeElementForName:(NSString *)name xmlnsPrefix:(NSString *)xmlnsPrefix;
 
 /**
- * Working with the common xmpp xmlns value.
- * 
- * Use these instead of getting/setting the URI.
- * The category methods below are more readable, and they actually work.
-**/
-
-@property (nonatomic, readonly, nullable) NSString *xmlns;
-- (void)setXmlns:(NSString *)ns;
-
-/**
- * Convenience methods for printing xml elements with different styles.
-**/
-
-@property (nonatomic, readonly, nullable) NSString *prettyXMLString;
-@property (nonatomic, readonly, nullable) NSString *compactXMLString;
-
-/**
  * Convenience methods for adding attributes.
 **/
 
@@ -77,7 +53,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addAttributeWithName:(NSString *)name doubleValue:(double)doubleValue;
 - (void)addAttributeWithName:(NSString *)name integerValue:(NSInteger)integerValue;
 - (void)addAttributeWithName:(NSString *)name unsignedIntegerValue:(NSUInteger)unsignedIntegerValue;
-- (void)addAttributeWithName:(NSString *)name stringValue:(NSString *)string;
 - (void)addAttributeWithName:(NSString *)name numberValue:(NSNumber *)number;
 - (void)addAttributeWithName:(NSString *)name objectValue:(id)objectValue;
 
@@ -122,9 +97,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)attributeStringValueForName:(NSString *)name withDefaultValue:(NSString *)defaultValue;
 - (NSNumber *)attributeNumberIntValueForName:(NSString *)name withDefaultValue:(int)defaultValue;
 - (NSNumber *)attributeNumberBoolValueForName:(NSString *)name withDefaultValue:(BOOL)defaultValue;
-
-@property (nonatomic, readonly) NSMutableDictionary<NSString*,NSString*> *attributesAsDictionary;
-
 /**
  * Convenience methods for extracting element values in different formats.
  * 
@@ -152,5 +124,42 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)namespaceStringValueForPrefix:(NSString *)prefix withDefaultValue:(NSString *)defaultValue;
 
 @end
+
+#if !TARGET_OS_IPHONE
+
+/// These are duplicates of functionality provided by DDXMLAdditions, however those additions only work on DDXML not NSXML.
+@interface NSXMLElement (XMPPDupes)
+
++ (NSXMLElement *)elementWithName:(NSString *)name xmlns:(NSString *)ns;
+
+@property (nonatomic, readonly) NSMutableDictionary<NSString*,NSString*> *attributesAsDictionary;
+- (void)addAttributeWithName:(NSString *)name stringValue:(NSString *)string;
+/**
+ * Working with the common xmpp xmlns value.
+ *
+ * Use these instead of getting/setting the URI.
+ * The category methods below are more readable, and they actually work.
+**/
+
+@property (nonatomic, readonly, nullable) NSString *xmlns;
+- (void)setXmlns:(NSString *)ns;
+
+/**
+ * Convenience methods for printing xml elements with different styles.
+**/
+
+@property (nonatomic, readonly, nullable) NSString *prettyXMLString;
+@property (nonatomic, readonly, nullable) NSString *compactXMLString;
+
+/**
+ * Extracting a single element.
+**/
+
+- (nullable NSXMLElement *)elementForName:(NSString *)name NS_REFINED_FOR_SWIFT;
+- (nullable NSXMLElement *)elementForName:(NSString *)name xmlns:(NSString *)xmlns NS_REFINED_FOR_SWIFT;
+
+@end
+
+#endif
 
 NS_ASSUME_NONNULL_END
