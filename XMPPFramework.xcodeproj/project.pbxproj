@@ -65,6 +65,12 @@
 		0D44BB721E537110000930E0 /* XMPPStringPrep.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D44BB641E537110000930E0 /* XMPPStringPrep.m */; };
 		0D44BB731E537110000930E0 /* XMPPTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D44BB651E537110000930E0 /* XMPPTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D44BB741E537110000930E0 /* XMPPTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D44BB661E537110000930E0 /* XMPPTimer.m */; };
+		498A39FC24E02B6B00818A7E /* XMPPExternalAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 498A39F724E02B6B00818A7E /* XMPPExternalAuthentication.m */; };
+		498A39FD24E02B6B00818A7E /* XMPPExternalAuthentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 498A39F824E02B6B00818A7E /* XMPPExternalAuthentication.h */; };
+		498A3A0124E02DB800818A7E /* XMPPDisco.m in Sources */ = {isa = PBXBuildFile; fileRef = 498A39FF24E02DB800818A7E /* XMPPDisco.m */; };
+		498A3A0224E02DB800818A7E /* XMPPDisco.h in Headers */ = {isa = PBXBuildFile; fileRef = 498A3A0024E02DB800818A7E /* XMPPDisco.h */; };
+		498A3A0624E02DE500818A7E /* XMPPCommands.m in Sources */ = {isa = PBXBuildFile; fileRef = 498A3A0424E02DE500818A7E /* XMPPCommands.m */; };
+		498A3A0724E02DE500818A7E /* XMPPCommands.h in Headers */ = {isa = PBXBuildFile; fileRef = 498A3A0524E02DE500818A7E /* XMPPCommands.h */; };
 		D91D42431FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D42421FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift */; };
 		D91D42441FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D42421FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift */; };
 		D91D42451FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D42421FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift */; };
@@ -133,13 +139,11 @@
 		D9A7A9BE1FB97892005183CD /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3401E6250C60010D1C7 /* CocoaAsyncSocket.framework */; };
 		D9A7ADAC1FB97A3C005183CD /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD6BF1E625B4D0010D1C7 /* AppKit.framework */; };
 		D9A7ADAD1FB97A3C005183CD /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3421E6250C60010D1C7 /* CocoaAsyncSocket.framework */; };
-		D9A7ADAE1FB97A3C005183CD /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3591E6250CA0010D1C7 /* CocoaLumberjack.framework */; };
 		D9A7ADAF1FB97A3C005183CD /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3821E6250CE0010D1C7 /* KissXML.framework */; };
 		D9A7ADB01FB97A3C005183CD /* libidn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3931E6250D20010D1C7 /* libidn.framework */; };
 		D9A7ADB11FB97A3C005183CD /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3A71E6251FA0010D1C7 /* libresolv.tbd */; };
 		D9A7ADB21FB97A3C005183CD /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3A51E6251E30010D1C7 /* libxml2.tbd */; };
 		D9A7AEF81FB97A65005183CD /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3441E6250C60010D1C7 /* CocoaAsyncSocket.framework */; };
-		D9A7AEF91FB97A65005183CD /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3671E6250CA0010D1C7 /* CocoaLumberjack.framework */; };
 		D9A7AEFA1FB97A65005183CD /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3841E6250CE0010D1C7 /* KissXML.framework */; };
 		D9A7AEFB1FB97A65005183CD /* libidn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3951E6250D20010D1C7 /* libidn.framework */; };
 		D9A7AEFC1FB97A65005183CD /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3A71E6251FA0010D1C7 /* libresolv.tbd */; };
@@ -148,8 +152,6 @@
 		D9A7AFB71FB97B2C005183CD /* XMPPFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD5331E6256D90010D1C7 /* XMPPFramework.framework */; };
 		D9A7AFB81FB97B34005183CD /* XMPPFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD6961E6258CF0010D1C7 /* XMPPFramework.framework */; };
 		D9A7B00F1FB9805D005183CD /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD35F1E6250CA0010D1C7 /* CocoaLumberjackSwift.framework */; };
-		D9A7B0121FB9806C005183CD /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD35B1E6250CA0010D1C7 /* CocoaLumberjackSwift.framework */; };
-		D9A7B0151FB9807B005183CD /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3691E6250CA0010D1C7 /* CocoaLumberjackSwift.framework */; };
 		D9A7B0161FB980E2005183CD /* XMPPFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7AA751FB97908005183CD /* XMPPFramework.swift */; };
 		D9A7B0171FB980E2005183CD /* XMPPFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7AA751FB97908005183CD /* XMPPFramework.swift */; };
 		D9A7B0181FB980E2005183CD /* XMPPFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7AA751FB97908005183CD /* XMPPFramework.swift */; };
@@ -706,7 +708,6 @@
 		D9DCD52D1E6256D90010D1C7 /* XMPPXOAuth2Google.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D44BB441E537105000930E0 /* XMPPXOAuth2Google.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9DCD52E1E6256D90010D1C7 /* NSNumber+XMPP.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D44BB261E5370FC000930E0 /* NSNumber+XMPP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9DCD5541E6257CE0010D1C7 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3421E6250C60010D1C7 /* CocoaAsyncSocket.framework */; };
-		D9DCD5551E6257CE0010D1C7 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3591E6250CA0010D1C7 /* CocoaLumberjack.framework */; };
 		D9DCD5561E6257CE0010D1C7 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3821E6250CE0010D1C7 /* KissXML.framework */; };
 		D9DCD5571E6257CE0010D1C7 /* libidn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3931E6250D20010D1C7 /* libidn.framework */; };
 		D9DCD5641E6258CF0010D1C7 /* XMPPMessageCarbons.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DCD2221E6250930010D1C7 /* XMPPMessageCarbons.m */; };
@@ -1006,7 +1007,6 @@
 		D9DCD6901E6258CF0010D1C7 /* XMPPXOAuth2Google.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D44BB441E537105000930E0 /* XMPPXOAuth2Google.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9DCD6911E6258CF0010D1C7 /* NSNumber+XMPP.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D44BB261E5370FC000930E0 /* NSNumber+XMPP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9DCD6A01E6259970010D1C7 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3441E6250C60010D1C7 /* CocoaAsyncSocket.framework */; };
-		D9DCD6A11E6259970010D1C7 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3671E6250CA0010D1C7 /* CocoaLumberjack.framework */; };
 		D9DCD6A21E6259970010D1C7 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3841E6250CE0010D1C7 /* KissXML.framework */; };
 		D9DCD6A31E6259970010D1C7 /* libidn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD3951E6250D20010D1C7 /* libidn.framework */; };
 		D9DCD6C01E625B4D0010D1C7 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCD6BF1E625B4D0010D1C7 /* AppKit.framework */; };
@@ -1091,7 +1091,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = DCB3185014EB418E001CFBEE;
+			remoteGlobalIDString = 19FF46011B8B4CF400B43179;
 			remoteInfo = CocoaLumberjack;
 		};
 		D9A7AD101FB97A3C005183CD /* PBXContainerItemProxy */ = {
@@ -1129,13 +1129,6 @@
 			remoteGlobalIDString = D94131BC1E5CEC8300189BD5;
 			remoteInfo = "KissXML (tvOS)";
 		};
-		D9A7AE5E1FB97A65005183CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 19D90B071BBFA9DB00947169;
-			remoteInfo = "CocoaLumberjack-tvOS";
-		};
 		D9A7AE601FB97A65005183CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D9DCD3391E6250C50010D1C7 /* CocoaAsyncSocket.xcodeproj */;
@@ -1156,20 +1149,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 19FF460E1B8B4D1400B43179;
 			remoteInfo = "CocoaLumberjackSwift-iOS";
-		};
-		D9A7B0101FB98064005183CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 18F3BEF61A81D8B700692297;
-			remoteInfo = "CocoaLumberjackSwift-macOS";
-		};
-		D9A7B0131FB98075005183CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 19D90B281BBFAA7500947169;
-			remoteInfo = "CocoaLumberjackSwift-tvOS";
 		};
 		D9DCD33F1E6250C60010D1C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1192,20 +1171,6 @@
 			remoteGlobalIDString = 7D8B70C41BCFA15700D8E273;
 			remoteInfo = "tvOS CocoaAsyncSocket";
 		};
-		D9DCD3581E6250CA0010D1C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DCB3185114EB418E001CFBEE;
-			remoteInfo = CocoaLumberjack;
-		};
-		D9DCD35A1E6250CA0010D1C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 18F3BF0F1A81D8B700692297;
-			remoteInfo = CocoaLumberjackSwift;
-		};
 		D9DCD35C1E6250CA0010D1C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
@@ -1226,83 +1191,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 18F3BFD71A81E06E00692297;
 			remoteInfo = "CocoaLumberjack-iOS-Static";
-		};
-		D9DCD3621E6250CA0010D1C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19190EDE1B84D812008D059E;
-			remoteInfo = "CocoaLumberjack-watchOS";
-		};
-		D9DCD3641E6250CA0010D1C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19190EEB1B84D826008D059E;
-			remoteInfo = "CocoaLumberjackSwift-watchOS";
-		};
-		D9DCD3661E6250CA0010D1C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19D90B261BBFA9DB00947169;
-			remoteInfo = "CocoaLumberjack-tvOS";
-		};
-		D9DCD3681E6250CA0010D1C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19D90B351BBFAA7500947169;
-			remoteInfo = "CocoaLumberjackSwift-tvOS";
-		};
-		D9DCD36A1E6250CA0010D1C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DCB318CA14ED6C3B001CFBEE;
-			remoteInfo = FmwkTest;
-		};
-		D9DCD36C1E6250CA0010D1C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 55CCBEFF19BA679200957A39;
-			remoteInfo = SwiftTest;
-		};
-		D9DCD36E1E6250CA0010D1C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 18F3BF5F1A81DD2E00692297;
-			remoteInfo = iOSSwiftTest;
-		};
-		D9DCD3701E6250CA0010D1C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19EC14671B84D134000EC2E7;
-			remoteInfo = watchOSSwiftTest;
-		};
-		D9DCD3721E6250CA0010D1C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19EC14731B84D134000EC2E7;
-			remoteInfo = "watchOSSwiftTest Extension";
-		};
-		D9DCD3741E6250CA0010D1C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19406BE11BDBABFF001194DC;
-			remoteInfo = tvOSSwiftTest;
-		};
-		D9DCD3761E6250CA0010D1C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 18F3BFF21A81E0C700692297;
-			remoteInfo = iOSLibStaticTest;
 		};
 		D9DCD37F1E6250CE0010D1C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1413,7 +1301,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = DCB3185014EB418E001CFBEE;
+			remoteGlobalIDString = 19FF46011B8B4CF400B43179;
 			remoteInfo = CocoaLumberjack;
 		};
 		D9DCD6981E6259770010D1C7 /* PBXContainerItemProxy */ = {
@@ -1429,13 +1317,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = D94131BC1E5CEC8300189BD5;
 			remoteInfo = "KissXML (tvOS)";
-		};
-		D9DCD69C1E6259770010D1C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9DCD3451E6250CA0010D1C7 /* Lumberjack.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 19D90B071BBFA9DB00947169;
-			remoteInfo = "CocoaLumberjack-tvOS";
 		};
 		D9DCD69E1E6259770010D1C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1506,6 +1387,12 @@
 		0D44BB641E537110000930E0 /* XMPPStringPrep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPStringPrep.m; sourceTree = "<group>"; };
 		0D44BB651E537110000930E0 /* XMPPTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPTimer.h; sourceTree = "<group>"; };
 		0D44BB661E537110000930E0 /* XMPPTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPTimer.m; sourceTree = "<group>"; };
+		498A39F724E02B6B00818A7E /* XMPPExternalAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPExternalAuthentication.m; sourceTree = "<group>"; };
+		498A39F824E02B6B00818A7E /* XMPPExternalAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPExternalAuthentication.h; sourceTree = "<group>"; };
+		498A39FF24E02DB800818A7E /* XMPPDisco.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPDisco.m; sourceTree = "<group>"; };
+		498A3A0024E02DB800818A7E /* XMPPDisco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPDisco.h; sourceTree = "<group>"; };
+		498A3A0424E02DE500818A7E /* XMPPCommands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPCommands.m; sourceTree = "<group>"; };
+		498A3A0524E02DE500818A7E /* XMPPCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPCommands.h; sourceTree = "<group>"; };
 		D91D42421FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XMPPPresence+XEP_0319.swift"; sourceTree = "<group>"; };
 		D91D42471FD9DCAA0064FD27 /* Date+XEP_0082.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+XEP_0082.swift"; sourceTree = "<group>"; };
 		D9268BAA1F9EB0BB009A37C7 /* XMPPMessage+XEP_0313.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XMPPMessage+XEP_0313.h"; sourceTree = "<group>"; };
@@ -1834,11 +1721,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9A7B0121FB9806C005183CD /* CocoaLumberjackSwift.framework in Frameworks */,
 				D9A7AFB71FB97B2C005183CD /* XMPPFramework.framework in Frameworks */,
 				D9A7ADAC1FB97A3C005183CD /* AppKit.framework in Frameworks */,
 				D9A7ADAD1FB97A3C005183CD /* CocoaAsyncSocket.framework in Frameworks */,
-				D9A7ADAE1FB97A3C005183CD /* CocoaLumberjack.framework in Frameworks */,
 				D9A7ADAF1FB97A3C005183CD /* KissXML.framework in Frameworks */,
 				D9A7ADB01FB97A3C005183CD /* libidn.framework in Frameworks */,
 				D9A7ADB11FB97A3C005183CD /* libresolv.tbd in Frameworks */,
@@ -1850,10 +1735,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9A7B0151FB9807B005183CD /* CocoaLumberjackSwift.framework in Frameworks */,
 				D9A7AFB81FB97B34005183CD /* XMPPFramework.framework in Frameworks */,
 				D9A7AEF81FB97A65005183CD /* CocoaAsyncSocket.framework in Frameworks */,
-				D9A7AEF91FB97A65005183CD /* CocoaLumberjack.framework in Frameworks */,
 				D9A7AEFA1FB97A65005183CD /* KissXML.framework in Frameworks */,
 				D9A7AEFB1FB97A65005183CD /* libidn.framework in Frameworks */,
 				D9A7AEFC1FB97A65005183CD /* libresolv.tbd in Frameworks */,
@@ -1867,7 +1750,6 @@
 			files = (
 				D9DCD6C01E625B4D0010D1C7 /* AppKit.framework in Frameworks */,
 				D9DCD5541E6257CE0010D1C7 /* CocoaAsyncSocket.framework in Frameworks */,
-				D9DCD5551E6257CE0010D1C7 /* CocoaLumberjack.framework in Frameworks */,
 				D9DCD5561E6257CE0010D1C7 /* KissXML.framework in Frameworks */,
 				D9DCD5571E6257CE0010D1C7 /* libidn.framework in Frameworks */,
 				D9DCD4911E6256D90010D1C7 /* libresolv.tbd in Frameworks */,
@@ -1880,7 +1762,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9DCD6A01E6259970010D1C7 /* CocoaAsyncSocket.framework in Frameworks */,
-				D9DCD6A11E6259970010D1C7 /* CocoaLumberjack.framework in Frameworks */,
 				D9DCD6A21E6259970010D1C7 /* KissXML.framework in Frameworks */,
 				D9DCD6A31E6259970010D1C7 /* libidn.framework in Frameworks */,
 				D9DCD5F81E6258CF0010D1C7 /* libresolv.tbd in Frameworks */,
@@ -1972,6 +1853,7 @@
 		0D44BB301E537105000930E0 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				498A39F624E02B6B00818A7E /* External */,
 				0D44BB311E537105000930E0 /* Anonymous */,
 				0D44BB341E537105000930E0 /* Deprecated-Digest */,
 				0D44BB371E537105000930E0 /* Deprecated-Plain */,
@@ -2078,6 +1960,33 @@
 				D9DCD3391E6250C50010D1C7 /* CocoaAsyncSocket.xcodeproj */,
 			);
 			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		498A39F624E02B6B00818A7E /* External */ = {
+			isa = PBXGroup;
+			children = (
+				498A39F724E02B6B00818A7E /* XMPPExternalAuthentication.m */,
+				498A39F824E02B6B00818A7E /* XMPPExternalAuthentication.h */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		498A39FE24E02DB800818A7E /* XEP-0030 */ = {
+			isa = PBXGroup;
+			children = (
+				498A39FF24E02DB800818A7E /* XMPPDisco.m */,
+				498A3A0024E02DB800818A7E /* XMPPDisco.h */,
+			);
+			path = "XEP-0030";
+			sourceTree = "<group>";
+		};
+		498A3A0324E02DE500818A7E /* XEP-0050 */ = {
+			isa = PBXGroup;
+			children = (
+				498A3A0424E02DE500818A7E /* XMPPCommands.m */,
+				498A3A0524E02DE500818A7E /* XMPPCommands.h */,
+			);
+			path = "XEP-0050";
 			sourceTree = "<group>";
 		};
 		D91D42351FD9DA9B0064FD27 /* XEP-0319 */ = {
@@ -2217,6 +2126,8 @@
 				D96D6E881F8D9D1B006DEC58 /* XEP-0359 */,
 				D9DCD23B1E6250930010D1C7 /* XEP-0363 */,
 				D9DCD2401E6250930010D1C7 /* XMPPMUCLight */,
+				498A3A0324E02DE500818A7E /* XEP-0050 */,
+				498A39FE24E02DB800818A7E /* XEP-0030 */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -2910,20 +2821,7 @@
 			children = (
 				D9DCD3611E6250CA0010D1C7 /* libCocoaLumberjack.a */,
 				D9DCD35D1E6250CA0010D1C7 /* CocoaLumberjack.framework */,
-				D9DCD3591E6250CA0010D1C7 /* CocoaLumberjack.framework */,
-				D9DCD3671E6250CA0010D1C7 /* CocoaLumberjack.framework */,
-				D9DCD3631E6250CA0010D1C7 /* CocoaLumberjack.framework */,
 				D9DCD35F1E6250CA0010D1C7 /* CocoaLumberjackSwift.framework */,
-				D9DCD35B1E6250CA0010D1C7 /* CocoaLumberjackSwift.framework */,
-				D9DCD3691E6250CA0010D1C7 /* CocoaLumberjackSwift.framework */,
-				D9DCD3651E6250CA0010D1C7 /* CocoaLumberjackSwift.framework */,
-				D9DCD3771E6250CA0010D1C7 /* iOSLibStaticTest.app */,
-				D9DCD36B1E6250CA0010D1C7 /* FmwkTest.app */,
-				D9DCD36F1E6250CA0010D1C7 /* iOSSwiftTest.app */,
-				D9DCD36D1E6250CA0010D1C7 /* SwiftTest.app */,
-				D9DCD3751E6250CA0010D1C7 /* tvOSSwiftTest.app */,
-				D9DCD3711E6250CA0010D1C7 /* watchOSSwiftTest.app */,
-				D9DCD3731E6250CA0010D1C7 /* watchOSSwiftTest Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3095,6 +2993,7 @@
 				D9DCD2711E6250930010D1C7 /* XMPPRosterCoreDataStorage.h in Headers */,
 				D9DCD2971E6250930010D1C7 /* XMPPRoomHybridStorage.h in Headers */,
 				D9DCD3101E6250930010D1C7 /* NSXMLElement+XEP_0203.h in Headers */,
+				498A3A0224E02DB800818A7E /* XMPPDisco.h in Headers */,
 				D9DCD32C1E6250930010D1C7 /* XMPPHTTPFileUpload.h in Headers */,
 				D9DCD27A1E6250930010D1C7 /* XMPPUserMemoryStorageObject.h in Headers */,
 				D9DCD2B21E6250930010D1C7 /* XMPPvCardCoreDataStorageObject.h in Headers */,
@@ -3133,6 +3032,7 @@
 				D9DCD3121E6250930010D1C7 /* XEP_0223.h in Headers */,
 				D9DCD2A81E6250930010D1C7 /* XMPPRoom.h in Headers */,
 				D9DCD30C1E6250930010D1C7 /* XMPPAutoTime.h in Headers */,
+				498A3A0724E02DE500818A7E /* XMPPCommands.h in Headers */,
 				D96D6EA21F8DA80A006DEC58 /* NSXMLElement+XEP_0359.h in Headers */,
 				D9DCD2F01E6250930010D1C7 /* XMPPMessageArchivingCoreDataStorage.h in Headers */,
 				D9DCD3041E6250930010D1C7 /* XMPPStreamManagementStanzas.h in Headers */,
@@ -3146,6 +3046,7 @@
 				0D44BB691E537110000930E0 /* GCDMulticastDelegate.h in Headers */,
 				0D44BB501E537105000930E0 /* XMPPPlainAuthentication.h in Headers */,
 				DD26F5701F7CD9B500F54F18 /* XMPPOneToOneChat.h in Headers */,
+				498A39FD24E02B6B00818A7E /* XMPPExternalAuthentication.h in Headers */,
 				0D44BB211E5370ED000930E0 /* XMPPStream.h in Headers */,
 				0D44BB1F1E5370ED000930E0 /* XMPPPresence.h in Headers */,
 				0D44BB191E5370ED000930E0 /* XMPPMessage.h in Headers */,
@@ -3599,7 +3500,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D9A7B0111FB98064005183CD /* PBXTargetDependency */,
 				D9A7AD0D1FB97A3C005183CD /* PBXTargetDependency */,
 				D9A7AD0F1FB97A3C005183CD /* PBXTargetDependency */,
 				D9A7AD111FB97A3C005183CD /* PBXTargetDependency */,
@@ -3622,10 +3522,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				D9A7B0141FB98075005183CD /* PBXTargetDependency */,
 				D9A7AE591FB97A65005183CD /* PBXTargetDependency */,
 				D9A7AE5B1FB97A65005183CD /* PBXTargetDependency */,
-				D9A7AE5D1FB97A65005183CD /* PBXTargetDependency */,
 				D9A7AE5F1FB97A65005183CD /* PBXTargetDependency */,
 			);
 			name = "XMPPFrameworkSwift (tvOS)";
@@ -3669,7 +3567,6 @@
 			dependencies = (
 				D9DCD6991E6259770010D1C7 /* PBXTargetDependency */,
 				D9DCD69B1E6259770010D1C7 /* PBXTargetDependency */,
-				D9DCD69D1E6259770010D1C7 /* PBXTargetDependency */,
 				D9DCD69F1E6259770010D1C7 /* PBXTargetDependency */,
 			);
 			name = "XMPPFramework (tvOS)";
@@ -3714,6 +3611,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 0D44BAE01E537066000930E0;
@@ -3771,20 +3669,6 @@
 			remoteRef = D9DCD3431E6250C60010D1C7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D9DCD3591E6250CA0010D1C7 /* CocoaLumberjack.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjack.framework;
-			remoteRef = D9DCD3581E6250CA0010D1C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9DCD35B1E6250CA0010D1C7 /* CocoaLumberjackSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjackSwift.framework;
-			remoteRef = D9DCD35A1E6250CA0010D1C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		D9DCD35D1E6250CA0010D1C7 /* CocoaLumberjack.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -3804,83 +3688,6 @@
 			fileType = archive.ar;
 			path = libCocoaLumberjack.a;
 			remoteRef = D9DCD3601E6250CA0010D1C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9DCD3631E6250CA0010D1C7 /* CocoaLumberjack.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjack.framework;
-			remoteRef = D9DCD3621E6250CA0010D1C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9DCD3651E6250CA0010D1C7 /* CocoaLumberjackSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjackSwift.framework;
-			remoteRef = D9DCD3641E6250CA0010D1C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9DCD3671E6250CA0010D1C7 /* CocoaLumberjack.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjack.framework;
-			remoteRef = D9DCD3661E6250CA0010D1C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9DCD3691E6250CA0010D1C7 /* CocoaLumberjackSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjackSwift.framework;
-			remoteRef = D9DCD3681E6250CA0010D1C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9DCD36B1E6250CA0010D1C7 /* FmwkTest.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = FmwkTest.app;
-			remoteRef = D9DCD36A1E6250CA0010D1C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9DCD36D1E6250CA0010D1C7 /* SwiftTest.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = SwiftTest.app;
-			remoteRef = D9DCD36C1E6250CA0010D1C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9DCD36F1E6250CA0010D1C7 /* iOSSwiftTest.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = iOSSwiftTest.app;
-			remoteRef = D9DCD36E1E6250CA0010D1C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9DCD3711E6250CA0010D1C7 /* watchOSSwiftTest.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = watchOSSwiftTest.app;
-			remoteRef = D9DCD3701E6250CA0010D1C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9DCD3731E6250CA0010D1C7 /* watchOSSwiftTest Extension.appex */ = {
-			isa = PBXReferenceProxy;
-			fileType = "wrapper.app-extension";
-			path = "watchOSSwiftTest Extension.appex";
-			remoteRef = D9DCD3721E6250CA0010D1C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9DCD3751E6250CA0010D1C7 /* tvOSSwiftTest.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = tvOSSwiftTest.app;
-			remoteRef = D9DCD3741E6250CA0010D1C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9DCD3771E6250CA0010D1C7 /* iOSLibStaticTest.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = iOSLibStaticTest.app;
-			remoteRef = D9DCD3761E6250CA0010D1C7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		D9DCD3801E6250CE0010D1C7 /* KissXML.framework */ = {
@@ -4045,6 +3852,7 @@
 				0D44BB741E537110000930E0 /* XMPPTimer.m in Sources */,
 				D9DCD31D1E6250930010D1C7 /* NSXMLElement+XEP_0297.m in Sources */,
 				D9DCD2F31E6250930010D1C7 /* XMPPMessageArchiving.m in Sources */,
+				498A3A0124E02DB800818A7E /* XMPPDisco.m in Sources */,
 				D9DCD25D1E6250930010D1C7 /* OMEMOKeyData.m in Sources */,
 				D9DCD3291E6250930010D1C7 /* NSXMLElement+XEP_0352.m in Sources */,
 				D9DCD24C1E6250930010D1C7 /* XMPPBandwidthMonitor.m in Sources */,
@@ -4084,7 +3892,9 @@
 				D9DCD2FB1E6250930010D1C7 /* XMPPPresence+XEP_0172.m in Sources */,
 				D9DCD32D1E6250930010D1C7 /* XMPPHTTPFileUpload.m in Sources */,
 				D9DCD2EA1E6250930010D1C7 /* XMPPCapabilities.m in Sources */,
+				498A39FC24E02B6B00818A7E /* XMPPExternalAuthentication.m in Sources */,
 				D9DCD2631E6250930010D1C7 /* OMEMOSignedPreKey.m in Sources */,
+				498A3A0624E02DE500818A7E /* XMPPCommands.m in Sources */,
 				D9DCD28F1E6250930010D1C7 /* XMPPRoom.xcdatamodeld in Sources */,
 				D9DCD3011E6250930010D1C7 /* XMPPBlocking.m in Sources */,
 				D9DCD3251E6250930010D1C7 /* XMPPMessage+XEP_0334.m in Sources */,
@@ -4586,11 +4396,6 @@
 			name = "KissXML (tvOS)";
 			targetProxy = D9A7AE5C1FB97A65005183CD /* PBXContainerItemProxy */;
 		};
-		D9A7AE5D1FB97A65005183CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CocoaLumberjack-tvOS";
-			targetProxy = D9A7AE5E1FB97A65005183CD /* PBXContainerItemProxy */;
-		};
 		D9A7AE5F1FB97A65005183CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "tvOS CocoaAsyncSocket";
@@ -4605,16 +4410,6 @@
 			isa = PBXTargetDependency;
 			name = "CocoaLumberjackSwift-iOS";
 			targetProxy = D9A7B00D1FB98057005183CD /* PBXContainerItemProxy */;
-		};
-		D9A7B0111FB98064005183CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CocoaLumberjackSwift-macOS";
-			targetProxy = D9A7B0101FB98064005183CD /* PBXContainerItemProxy */;
-		};
-		D9A7B0141FB98075005183CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CocoaLumberjackSwift-tvOS";
-			targetProxy = D9A7B0131FB98075005183CD /* PBXContainerItemProxy */;
 		};
 		D9DCD3971E6250DB0010D1C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4665,11 +4460,6 @@
 			isa = PBXTargetDependency;
 			name = "KissXML (tvOS)";
 			targetProxy = D9DCD69A1E6259770010D1C7 /* PBXContainerItemProxy */;
-		};
-		D9DCD69D1E6259770010D1C7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CocoaLumberjack-tvOS";
-			targetProxy = D9DCD69C1E6259770010D1C7 /* PBXContainerItemProxy */;
 		};
 		D9DCD69F1E6259770010D1C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

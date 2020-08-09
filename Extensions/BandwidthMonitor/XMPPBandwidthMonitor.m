@@ -140,7 +140,7 @@
 		
 		dispatch_source_cancel(timer);
 		#if !OS_OBJECT_USE_OBJC
-		dispatch_release(timer);
+//		dispatch_release(timer); // FIXME: Should i really remove this???
 		#endif
 		timer = NULL;
 	}
